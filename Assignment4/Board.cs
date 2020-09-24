@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 
 namespace Assignment4
@@ -12,8 +13,11 @@ namespace Assignment4
     {
         /// <summary>
         /// Holds 3x3 grid of panels
+        /// Row X Columns
         /// </summary>
-        private Panel[,] p = new Panel[3, 3];
+        private Panel[,] p = { { new Panel(), new Panel(), new Panel() }, 
+            { new Panel(), new Panel(), new Panel() } , 
+            { new Panel(), new Panel(), new Panel() } };
         /// <summary>
         /// Signifies who's turn it is
         /// </summary>
@@ -44,9 +48,17 @@ namespace Assignment4
         /// </summary>
         /// <returns>turn</returns>
         public Turn GetTurn() { return this.turn; }
+        /// <summary>
+        /// Get the panel for the provided indicies.
+        /// </summary>
+        /// <param name="row">Row index</param>
+        /// <param name="column">Column index</param>
+        /// <returns>The specific panel is returned</returns>
+        public Panel getPanel(int row, int column) { return this.p[row, column]; }
 
         /// <summary>
         /// Check if the current status of the board to see if the move was a winning move
+        /// Row X Column
         /// </summary>
         /// <returns>True if it is a winning move</returns>
         public bool isWinningMove() 

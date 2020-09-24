@@ -58,6 +58,8 @@ namespace Assignment4
             // If panels are not empty, check if they are equal
             if (this.selection == panel.selection)
                 return true;
+
+            return false;
         }
 
     }
