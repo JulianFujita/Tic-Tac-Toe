@@ -120,11 +120,12 @@
             this.start_button.TabIndex = 3;
             this.start_button.Text = "Start Game";
             this.start_button.UseVisualStyleBackColor = true;
+            this.start_button.Click += new System.EventHandler(this.start_button_Click);
             // 
             // tictactoe_board
             // 
             this.tictactoe_board.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tictactoe_board.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.tictactoe_board.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tictactoe_board.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
             this.tictactoe_board.ColumnCount = 3;
             this.tictactoe_board.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -139,6 +140,7 @@
             this.tictactoe_board.Controls.Add(this.l0_2, 2, 0);
             this.tictactoe_board.Controls.Add(this.l0_1, 1, 0);
             this.tictactoe_board.Controls.Add(this.l0_0, 0, 0);
+            this.tictactoe_board.Enabled = false;
             this.tictactoe_board.Location = new System.Drawing.Point(12, 12);
             this.tictactoe_board.Name = "tictactoe_board";
             this.tictactoe_board.RowCount = 3;
