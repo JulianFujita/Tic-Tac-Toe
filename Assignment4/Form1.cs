@@ -20,6 +20,23 @@ namespace Assignment4
         public Form1()
         {
             InitializeComponent();
+            PrepareBoard();
+        }
+
+        /// <summary>
+        /// Overwrites the default text on the labels
+        /// </summary>
+        public void PrepareBoard() 
+        {
+            l0_0.Text = "";
+            l0_1.Text = "";
+            l0_2.Text = "";
+            l1_0.Text = "";
+            l1_1.Text = "";
+            l1_2.Text = "";
+            l2_0.Text = "";
+            l2_1.Text = "";
+            l2_2.Text = "";
         }
 
         /// <summary>
@@ -50,28 +67,40 @@ namespace Assignment4
             // Get the panel and attempt a move
             // TODO
             // Get the panel and attempt a move
+            Panel selection = b.GetPanel(currentRow, currentColumn);
+
+            selection.TrySelect(b);
             String cell = currentRow + ", " + currentColumn;
             switch (cell)
             {
                 case "0, 0":
+                    l0_0.Text = selection.GetSelection().ToString();
                     break;
                 case "0, 1":
+                    l0_1.Text = selection.GetSelection().ToString();
                     break;
                 case "0, 2":
+                    l0_2.Text = selection.GetSelection().ToString();
                     break;
                 case "1, 0":
+                    l1_0.Text = selection.GetSelection().ToString();
                     break;
                 case "1, 1":
+                    l1_1.Text = selection.GetSelection().ToString();
                     break;
                 case "1, 2":
+                    l1_2.Text = selection.GetSelection().ToString();
                     break;
                 case "2, 0":
+                    l2_0.Text = selection.GetSelection().ToString();
                     break;
                 case "2, 1":
+                    l2_1.Text = selection.GetSelection().ToString();
                     break;
                 case "2, 2":
+                    l2_2.Text = selection.GetSelection().ToString();
                     break;
-            }
+            } 
         }
     }
 }

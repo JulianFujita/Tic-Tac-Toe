@@ -49,19 +49,29 @@ namespace Assignment4
         /// <returns>turn</returns>
         public Turn GetTurn() { return this.turn; }
         /// <summary>
+        /// Switches to the next turn
+        /// </summary>
+        public void NextTurn() 
+        {
+            if (this.turn == Turn.P1)
+                this.turn = Turn.P2;
+            else
+                this.turn = Turn.P1;
+        }
+        /// <summary>
         /// Get the panel for the provided indicies.
         /// </summary>
         /// <param name="row">Row index</param>
         /// <param name="column">Column index</param>
         /// <returns>The specific panel is returned</returns>
-        public Panel getPanel(int row, int column) { return this.p[row, column]; }
+        public Panel GetPanel(int row, int column) { return this.p[row, column]; }
 
         /// <summary>
         /// Check if the current status of the board to see if the move was a winning move
         /// Row X Column
         /// </summary>
         /// <returns>True if it is a winning move</returns>
-        public bool isWinningMove() 
+        public bool IsWinningMove() 
         {
             //Horizontal
             if (p[0, 0].Equals(p[0, 1]) && p[0, 1].Equals(p[0, 2]))

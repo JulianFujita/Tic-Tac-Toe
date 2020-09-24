@@ -103,12 +103,13 @@
             // 
             // game_status_text
             // 
+            this.game_status_text.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.game_status_text.Location = new System.Drawing.Point(7, 26);
             this.game_status_text.Name = "game_status_text";
             this.game_status_text.ReadOnly = true;
             this.game_status_text.Size = new System.Drawing.Size(317, 68);
             this.game_status_text.TabIndex = 0;
-            this.game_status_text.Text = "";
+            this.game_status_text.Text = "The game has not started";
             // 
             // start_button
             // 

@@ -25,14 +25,21 @@ namespace Assignment4
         /// </summary>
         /// <param name="selection">X or O</param>
         /// <returns>True if successful</returns>
-        public bool TrySelect(Selection selection)
+        public bool TrySelect(Board board)
         {
             if (isUsed)
                 return false;
             else 
             {
                 isUsed = true;
-                this.selection = selection;
+
+                if (board.GetTurn() == Board.Turn.P1)
+                    this.selection = Selection.X;
+                else
+                    this.selection = Selection.O;
+
+                board.NextTurn();
+
                 return true;
             }
         }
