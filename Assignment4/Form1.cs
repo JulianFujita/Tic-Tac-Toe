@@ -49,6 +49,29 @@ namespace Assignment4
 
             // Get the panel and attempt a move
             // TODO
+            // Get the panel and attempt a move
+            String cell = currentRow + ", " + currentColumn;
+            switch (cell)
+            {
+                case "0, 0":
+                    break;
+                case "0, 1":
+                    break;
+                case "0, 2":
+                    break;
+                case "1, 0":
+                    break;
+                case "1, 1":
+                    break;
+                case "1, 2":
+                    break;
+                case "2, 0":
+                    break;
+                case "2, 1":
+                    break;
+                case "2, 2":
+                    break;
+            }
         }
     }
 }

@@ -36,8 +36,18 @@
             this.game_status_text = new System.Windows.Forms.RichTextBox();
             this.start_button = new System.Windows.Forms.Button();
             this.tictactoe_board = new System.Windows.Forms.TableLayoutPanel();
+            this.l2_2 = new System.Windows.Forms.Label();
+            this.l2_1 = new System.Windows.Forms.Label();
+            this.l2_0 = new System.Windows.Forms.Label();
+            this.l1_2 = new System.Windows.Forms.Label();
+            this.l1_1 = new System.Windows.Forms.Label();
+            this.l1_0 = new System.Windows.Forms.Label();
+            this.l0_2 = new System.Windows.Forms.Label();
+            this.l0_1 = new System.Windows.Forms.Label();
+            this.l0_0 = new System.Windows.Forms.Label();
             this.statistics_groupbox.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tictactoe_board.SuspendLayout();
             this.SuspendLayout();
             // 
             // statistics_groupbox
@@ -112,12 +122,22 @@
             // 
             // tictactoe_board
             // 
+            this.tictactoe_board.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tictactoe_board.BackColor = System.Drawing.SystemColors.ControlDark;
             this.tictactoe_board.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
             this.tictactoe_board.ColumnCount = 3;
             this.tictactoe_board.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tictactoe_board.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tictactoe_board.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tictactoe_board.Controls.Add(this.l2_2, 2, 2);
+            this.tictactoe_board.Controls.Add(this.l2_1, 1, 2);
+            this.tictactoe_board.Controls.Add(this.l2_0, 0, 2);
+            this.tictactoe_board.Controls.Add(this.l1_2, 2, 1);
+            this.tictactoe_board.Controls.Add(this.l1_1, 1, 1);
+            this.tictactoe_board.Controls.Add(this.l1_0, 0, 1);
+            this.tictactoe_board.Controls.Add(this.l0_2, 2, 0);
+            this.tictactoe_board.Controls.Add(this.l0_1, 1, 0);
+            this.tictactoe_board.Controls.Add(this.l0_0, 0, 0);
             this.tictactoe_board.Location = new System.Drawing.Point(12, 12);
             this.tictactoe_board.Name = "tictactoe_board";
             this.tictactoe_board.RowCount = 3;
@@ -127,6 +147,114 @@
             this.tictactoe_board.Size = new System.Drawing.Size(383, 361);
             this.tictactoe_board.TabIndex = 2;
             this.tictactoe_board.Click += new System.EventHandler(this.tictactoe_board_Click);
+            // 
+            // l2_2
+            // 
+            this.l2_2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.l2_2.AutoSize = true;
+            this.l2_2.Font = new System.Drawing.Font("Mistral", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.l2_2.Location = new System.Drawing.Point(274, 242);
+            this.l2_2.Name = "l2_2";
+            this.l2_2.Size = new System.Drawing.Size(87, 114);
+            this.l2_2.TabIndex = 0;
+            this.l2_2.Text = "X";
+            this.l2_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // l2_1
+            // 
+            this.l2_1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.l2_1.AutoSize = true;
+            this.l2_1.Font = new System.Drawing.Font("Mistral", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.l2_1.Location = new System.Drawing.Point(147, 242);
+            this.l2_1.Name = "l2_1";
+            this.l2_1.Size = new System.Drawing.Size(87, 114);
+            this.l2_1.TabIndex = 0;
+            this.l2_1.Text = "X";
+            this.l2_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // l2_0
+            // 
+            this.l2_0.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.l2_0.AutoSize = true;
+            this.l2_0.Font = new System.Drawing.Font("Mistral", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.l2_0.Location = new System.Drawing.Point(21, 242);
+            this.l2_0.Name = "l2_0";
+            this.l2_0.Size = new System.Drawing.Size(87, 114);
+            this.l2_0.TabIndex = 0;
+            this.l2_0.Text = "X";
+            this.l2_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // l1_2
+            // 
+            this.l1_2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.l1_2.AutoSize = true;
+            this.l1_2.Font = new System.Drawing.Font("Mistral", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.l1_2.Location = new System.Drawing.Point(274, 123);
+            this.l1_2.Name = "l1_2";
+            this.l1_2.Size = new System.Drawing.Size(87, 114);
+            this.l1_2.TabIndex = 0;
+            this.l1_2.Text = "X";
+            this.l1_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // l1_1
+            // 
+            this.l1_1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.l1_1.AutoSize = true;
+            this.l1_1.Font = new System.Drawing.Font("Mistral", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.l1_1.Location = new System.Drawing.Point(147, 123);
+            this.l1_1.Name = "l1_1";
+            this.l1_1.Size = new System.Drawing.Size(87, 114);
+            this.l1_1.TabIndex = 0;
+            this.l1_1.Text = "X";
+            this.l1_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // l1_0
+            // 
+            this.l1_0.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.l1_0.AutoSize = true;
+            this.l1_0.Font = new System.Drawing.Font("Mistral", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.l1_0.Location = new System.Drawing.Point(21, 123);
+            this.l1_0.Name = "l1_0";
+            this.l1_0.Size = new System.Drawing.Size(87, 114);
+            this.l1_0.TabIndex = 0;
+            this.l1_0.Text = "X";
+            this.l1_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // l0_2
+            // 
+            this.l0_2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.l0_2.AutoSize = true;
+            this.l0_2.Font = new System.Drawing.Font("Mistral", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.l0_2.Location = new System.Drawing.Point(274, 4);
+            this.l0_2.Name = "l0_2";
+            this.l0_2.Size = new System.Drawing.Size(87, 114);
+            this.l0_2.TabIndex = 0;
+            this.l0_2.Text = "X";
+            this.l0_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // l0_1
+            // 
+            this.l0_1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.l0_1.AutoSize = true;
+            this.l0_1.Font = new System.Drawing.Font("Mistral", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.l0_1.Location = new System.Drawing.Point(147, 4);
+            this.l0_1.Name = "l0_1";
+            this.l0_1.Size = new System.Drawing.Size(87, 114);
+            this.l0_1.TabIndex = 0;
+            this.l0_1.Text = "X";
+            this.l0_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // l0_0
+            // 
+            this.l0_0.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.l0_0.AutoSize = true;
+            this.l0_0.Font = new System.Drawing.Font("Mistral", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.l0_0.Location = new System.Drawing.Point(21, 4);
+            this.l0_0.Name = "l0_0";
+            this.l0_0.Size = new System.Drawing.Size(87, 114);
+            this.l0_0.TabIndex = 0;
+            this.l0_0.Text = "X";
+            this.l0_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -142,6 +270,8 @@
             this.statistics_groupbox.ResumeLayout(false);
             this.statistics_groupbox.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.tictactoe_board.ResumeLayout(false);
+            this.tictactoe_board.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -156,6 +286,15 @@
         private System.Windows.Forms.RichTextBox game_status_text;
         private System.Windows.Forms.Button start_button;
         private System.Windows.Forms.TableLayoutPanel tictactoe_board;
+        private System.Windows.Forms.Label l0_0;
+        private System.Windows.Forms.Label l2_2;
+        private System.Windows.Forms.Label l2_1;
+        private System.Windows.Forms.Label l2_0;
+        private System.Windows.Forms.Label l1_2;
+        private System.Windows.Forms.Label l1_1;
+        private System.Windows.Forms.Label l1_0;
+        private System.Windows.Forms.Label l0_2;
+        private System.Windows.Forms.Label l0_1;
     }
 }
 
